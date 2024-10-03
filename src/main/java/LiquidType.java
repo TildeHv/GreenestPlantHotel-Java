@@ -1,3 +1,4 @@
+// enum
 public enum LiquidType {
 
     TAP_WATER("kranvatten"),

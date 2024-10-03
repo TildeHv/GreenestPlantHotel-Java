@@ -1,3 +1,4 @@
+// interface
 public interface CalculatePlant {
 
     double getLiquidAmount();

@@ -12,10 +12,12 @@ public class Main {
 
     private void menu() {
 
+        // Polymorfism
         plantList.add(new Cacti(0.2, "Igge"));
         plantList.add(new CarnivorousPlant(0.7, "Meatloaf"));
         plantList.add(new PalmTree(5, "Laura"));
         plantList.add(new PalmTree(1, "Olof"));
+
 
         while (true) {
             String whatPlant = JOptionPane.showInputDialog("Vilken växt ska få vätska?");
@@ -34,6 +36,7 @@ public class Main {
         }
     }
 
+    // private är också inkapsling
     private CalculatePlant getPlant(List<CalculatePlant> plantList, String whatPlant) {
         for (CalculatePlant plant : plantList) {
             if (plant.getName().equalsIgnoreCase(whatPlant)) {
